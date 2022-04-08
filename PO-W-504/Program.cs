@@ -6,11 +6,14 @@ namespace PO_W_504
 {
     class Mecz
     {
+        // deklaracja właściwości z jednoczesnym przypisaniem wartości
         public int wynik { get; set; } = 0;
+        // nadpisanie pozytywnego operatora porównania
         public static bool operator ==(Mecz blueTeam, Mecz redTeam)
         {
             return blueTeam.wynik == redTeam.wynik;
         }
+        // nadpisanie negatynego operatora porównania
         public static bool operator !=(Mecz blueTeam, Mecz redTeam)
         {
             return blueTeam.wynik != redTeam.wynik;
